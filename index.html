@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST Digit Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Digit Classifier</h1>
+        </header>
+        <div class="container-grid">
+            <div class="canvas-container">
+                <h2>Draw a Number</h2>
+                <canvas id="drawingCanvas" width="280" height="280"></canvas>
+                <canvas id="secretCanvas" width="280" height="280"></canvas>
+                <div>
+                    <button id="predictButton">Predict</button>
+                    <button id="clearButton">Clear</button>
+                </div>
+            </div>
+            <div class="chart-container">
+                <header><i class="fa-solid fa-robot"></i>
+                    <h2>"I only know the digits 0, 1, 2, 3, and 4"</h2>
+                </header>
+                <div class="predictions" id="predictions"></div>
+
+                <!-- <svg id="barChart" width="500" height="300"></svg> -->
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
